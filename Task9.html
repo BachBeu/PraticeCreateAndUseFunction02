@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function println(str) {
+        document.write(str + '<br>');
+    }
+    function find(arr,num) {
+        count = 0;
+        for (let i= 0; i<arr.length;i++){
+            if (num == arr[i]){
+                count++;
+            }
+        }
+        if (count){
+            return count;
+        } else return -1;
+    }
+    let arr = [1,4,6,8,1];
+    let num =3;
+    let exit = find(arr,num);
+    println( exit);
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function println(str) {
+        document.write(str + '<br>');
+    }
+    function rever(array) {
+        let arrayRe = [];
+        for (let i = array.length - 1; i >= 0; i--) {
+            arrayRe.push(array[i]);
+        }
+        return arrayRe;
+    }
+    let arr = [3, 2, 1];
+    println(rever(arr).join(' '));
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa</title>
+</head>
+<body>
+<script>
+    let fact = 1;
+    let num = parseInt(prompt("Nhập vào một số: "));
+    function giaithua(num) {
+        for (let i = 1; i <= num; i++){
+            fact = fact * i;
+        }
+        return fact;
+    }
+    giaithua(num);
+    alert("giai thừa của một số nguyên là: " + giaithua())
+</script>
+</body>
+</html>

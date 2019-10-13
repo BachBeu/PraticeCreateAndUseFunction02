@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function println(str) {
+        document.write(str + '<br>');
+    }
+    function swap(a, b) {
+        let temp = a.value;
+        a.value = b.value;
+        b.value = temp;
+    }
+    let a = {value : 4};
+    let b = {value: 6};
+    swap(a, b);
+    println(a.value);
+    println(b.value);
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích và chu vi hình tròn</title>
+</head>
+<body>
+<script>
+    let choose = parseInt(prompt("Chọn 0. tính diện tích hình tròn hoặc chọn 1. tính chu vi hình tròn"));
+    let r = parseInt(prompt("Nhập vào bán kính: "));
+    if(choose == 0){
+        dientich();
+    }else if(choose == 1){
+        chuvi();
+    }else{
+        alert("Nhập lại lựa chọn")
+    }
+    function dientich() {
+        let s = r*r*3.14;
+        alert("Diện tích hình tròn là: " + s);
+    }
+    function chuvi() {
+        let c = r*2*3.14;
+        alert("Chu vi hình tròn là: " + c);
+    }
+</script>
+</body>
+</html>
